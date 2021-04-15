@@ -27,7 +27,7 @@ class Testes(TestCase):
         
         end = time.time()
         execution_time = end - start 
-        print(f"{blog.nome} {blog.versao} tempo de execução: {execution_time * 1000:0.2f} mf")
+        print(f"{blog.nome} {blog.versao} tempo de execução: {execution_time * 1000:0.2f} ms")
 
         self.assertIsNotNone(result)
         self.assertIsInstance(result[0], dict)
